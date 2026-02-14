@@ -5,13 +5,13 @@ numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 symbols = ['!', '@', '#', '$', '%', '^', '&', '*', '+', '=', '(', ')' ]
 
 print('''
-    ===========================================
-    -- Welcome to the Py-Password Generator! --
-    ===========================================
-    ''')
-nr_letters = int(input("1 - How many letters? "))
-nr_numbers = int(input("2 - How many numbers? "))
-nr_symbols = int(input("3 - How many symbols? "))
+===========================================
+-- Welcome to the Py-Password Generator! --
+===========================================
+''')
+nr_letters = int(input("1 - How many letters? [0,54] "))
+nr_numbers = int(input("2 - How many numbers? [0,10] "))
+nr_symbols = int(input("3 - How many symbols? [0,12] "))
 
 random_letters = random.sample(letters, nr_letters)
 random_numbers = random.sample(numbers, nr_numbers)
